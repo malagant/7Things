@@ -1,0 +1,94 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:App.xaml" caret="524" fromTop="10" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/d:Properties/f:WMAppManifest.xml" caret="0" fromTop="0" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="7530" fromTop="15" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:App.xaml.cs" caret="4103" fromTop="19" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml.cs" caret="657" fromTop="22" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml.cs" caret="1159" fromTop="20" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="2550" fromTop="29" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:App.xaml" caret="536" fromTop="9" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:App.xaml" caret="394" fromTop="6" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:App.xaml" caret="508" fromTop="10" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="3130" fromTop="21" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="3996" fromTop="26" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="2076" fromTop="5" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="1224" fromTop="3" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="4866" fromTop="9" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="5693" fromTop="10" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="7317" fromTop="22" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="6600" fromTop="11" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="25" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="34" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="31" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="0" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="19" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="22" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="18" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="37" fromTop="0" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="3272" fromTop="41" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:App.xaml.cs" caret="1772" fromTop="34" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml" caret="7639" fromTop="15" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:MainPage.xaml.cs" caret="1076" fromTop="19" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="1968" fromTop="14" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml.cs" caret="636" fromTop="19" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="1817" fromTop="19" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="1471" fromTop="14" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="2664" fromTop="27" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="2276" fromTop="25" />
+      <File id="268862A8-3593-4C89-860C-827C0F2CDA60/f:TaskForm.xaml" caret="2545" fromTop="29" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="dark" priority="1" />
+      <Item value="appbar.add.rest.png" priority="0" />
+      <Item value="Icons" priority="0" />
+      <Item value="appbar.feature.settings.rest.png" priority="0" />
+      <Item value="NavigationService" priority="1" />
+      <Item value="UriKind`0" priority="0" />
+      <Item value="new" priority="0" />
+      <Item value="Uri" priority="0" />
+      <Item value="this" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Button">
+      <Item value="HorizontalAlignment" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.StackPanel">
+      <Item value="Orientation" priority="1" />
+      <Item value="ColumnDefinition`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Navigation.NavigationService">
+      <Item value="Navigate`0" priority="1" />
+      <Item value="GoBack`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.UriKind">
+      <Item value="Relative" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="JetBrains.ReSharper.Feature.Services.Xaml.CodeCompletion.XamlBasicCompletionContext">
+      <Item value="ctx" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

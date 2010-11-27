@@ -1,0 +1,13 @@
+﻿<xapCache source="C:\Users\mjohann\projects\7Things\7Things\Bin\Debug\_7Things.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="26.11.2010 19:33:22">
+  <file source="C:\Users\mjohann\projects\7Things\7Things\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="25.11.2010 17:35:11" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\obj\Debug\7Things.dll" archivePath="7Things.dll" lastWriteTime="26.11.2010 19:33:22" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.0\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01.09.2010 03:51:10" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="25.11.2010 17:35:11" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\Background.png" archivePath="Background.png" lastWriteTime="25.11.2010 17:35:11" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\Images\Icons\dark\appbar.add.rest.png" archivePath="Images\Icons\dark\appbar.add.rest.png" lastWriteTime="25.11.2010 17:52:40" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\Images\Icons\dark\appbar.feature.settings.rest.png" archivePath="Images\Icons\dark\appbar.feature.settings.rest.png" lastWriteTime="25.11.2010 17:52:41" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\Images\Icons\light\appbar.add.rest.png" archivePath="Images\Icons\light\appbar.add.rest.png" lastWriteTime="25.11.2010 17:53:21" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\Images\Icons\light\appbar.feature.settings.rest.png" archivePath="Images\Icons\light\appbar.feature.settings.rest.png" lastWriteTime="25.11.2010 17:53:21" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="25.11.2010 17:35:11" />
+  <file source="C:\Users\mjohann\projects\7Things\7Things\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="25.11.2010 17:35:18" />
+</xapCache>
