@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -77,11 +78,11 @@ namespace _7Things.ViewModels
       }
     }
 
-    public ObservableCollection<TaskModel> TasksForToday
+    public IEnumerable<TaskModel> TasksForToday
     {
       get
       {
-        return Items;
+        return Items.Where(t => t.ToBeFinished.Equals(DateTime.Today));
       }
     }
 

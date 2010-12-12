@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using _7Things.ViewModels;
 using Microsoft.Phone.Controls;
 
@@ -35,6 +36,22 @@ namespace _7Things
     private void OverviewListBox_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
     {
       var task = (TaskModel)OverviewListBox.SelectedItem;
+      NavigationService.Navigate(new Uri("/TaskForm.xaml?task=" + task.Id, UriKind.Relative));
+    }
+
+    private void DeleteTask(object sender, RoutedEventArgs e)
+    {
+      App.ViewModel.Items.Remove(App.ViewModel.SelectedTask);
+    }
+
+    private void CheckBox_Click(object sender, RoutedEventArgs e)
+    {
+      
+    }
+
+    private void TodayListBox_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+    {
+      var task = (TaskModel)TodayListBox.SelectedItem;
       NavigationService.Navigate(new Uri("/TaskForm.xaml?task=" + task.Id, UriKind.Relative));
     }
   }
