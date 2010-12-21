@@ -54,5 +54,6 @@ namespace _7Things
       var task = (TaskModel)TodayListBox.SelectedItem;
       NavigationService.Navigate(new Uri("/TaskForm.xaml?task=" + task.Id, UriKind.Relative));
     }
+
   }
 }

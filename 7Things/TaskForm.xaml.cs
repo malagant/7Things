@@ -5,56 +5,64 @@ using Microsoft.Phone.Controls;
 
 namespace _7Things
 {
-  public partial class TaskForm : PhoneApplicationPage
-  {
-    private static TaskModel _task;
-
-    public TaskForm()
+    public partial class TaskForm : PhoneApplicationPage
     {
-      InitializeComponent();
-    }
+        private static TaskModel _task;
 
-    private void BtnSaveClick(object sender, EventArgs e)
-    {
-      _task.Title = txtTitle.Text;
-      _task.Description = txtDescription.Text;
-      if (chkIsDone.IsChecked != null) _task.IsDone = chkIsDone.IsChecked.Value;
-      if (dpDate.Value != null && !dpDate.Value.Equals(DateTime.MinValue))
-        _task.ToBeFinished = (DateTime) dpDate.Value;
-
-      if (App.ViewModel.GetTaskById(_task.Id) == null)
-      {
-        App.ViewModel.Items.Add(_task);
-      }
-      NavigationService.GoBack();
-    }
-
-    private void BtnCancelClick(object sender, EventArgs e)
-    {
-      NavigationService.GoBack();
-    }
-
-    protected override void OnNavigatedTo(NavigationEventArgs e)
-    {
-      base.OnNavigatedTo(e);
-
-      if (!NavigationContext.QueryString.ContainsKey("newTask"))
-      {
-        _task = App.ViewModel.SelectedTask;
-        if (_task != null)
+        public TaskForm()
         {
-          txtTitle.Text = _task.Title;
-          chkIsDone.IsChecked = _task.IsDone;
-          txtDescription.Text = _task.Description;
-          if (!_task.ToBeFinished.Equals(DateTime.MinValue))
-          {
-            dpDate.Value = _task.ToBeFinished.Date;
-          }
+            InitializeComponent();
+            _task = App.ViewModel.SelectedTask;
         }
-      } else
-      {
-          _task = new TaskModel {Id = Guid.NewGuid()};
-      }
+
+        private void BtnSaveClick(object sender, EventArgs e)
+        {
+            _task.Title = txtTitle.Text;
+            _task.Description = txtDescription.Text;
+            if (chkIsDone.IsChecked != null)
+                _task.IsDone = chkIsDone.IsChecked.Value;
+            if (dpDate.Value != null)
+            {
+                _task.ToBeFinished = (DateTime) dpDate.Value;
+            }
+
+            if (App.ViewModel.GetTaskById(_task.Id) == null)
+            {
+                App.ViewModel.Items.Add(_task);
+            }
+
+            App.ViewModel.Refresh();
+            NavigationService.GoBack();
+        }
+
+        private void BtnCancelClick(object sender, EventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            if (!NavigationContext.QueryString.ContainsKey("newTask"))
+            {
+                if (_task != null)
+                {
+                    txtTitle.Text = _task.Title;
+                    chkIsDone.IsChecked = _task.IsDone;
+                    txtDescription.Text = _task.Description;
+                }
+            }
+            else
+            {
+                _task = new TaskModel {Id = Guid.NewGuid()};
+            }
+        }
+
+        private void dpDate_ValueChanged(object sender, DateTimeValueChangedEventArgs e)
+        {
+            if (e.NewDateTime != null)
+                _task.ToBeFinished = (DateTime) e.NewDateTime;
+        }
     }
-  }
 }

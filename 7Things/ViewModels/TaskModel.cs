@@ -71,7 +71,7 @@ namespace _7Things.ViewModels
                 if(value != _toBeFinished)
                 {
                     _toBeFinished = value;
-                    NotifyPropertyChanged("ToBeFinished");
+                   NotifyPropertyChanged("ToBeFinished");
                 }
             }
         }

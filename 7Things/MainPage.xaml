@@ -6,7 +6,9 @@
 		<controls:Pivot Title="{StaticResource AppName}">
 			<controls:PivotItem Header="Übersicht">
 				<!--Double line list with text wrapping-->
-				<ListBox x:Name="OverviewListBox" Margin="0,0,-12,0" ItemsSource="{Binding TasksForOverview}" SelectedItem="{Binding SelectedTask, Mode=TwoWay}" MouseLeftButtonUp="OverviewListBox_MouseLeftButtonUp">
+				<ListBox x:Name="OverviewListBox" Margin="0,0,-12,0" 
+                         
+                         ItemsSource="{Binding TasksForOverview}" SelectedItem="{Binding SelectedTask, Mode=TwoWay, UpdateSourceTrigger=Default}" MouseLeftButtonUp="OverviewListBox_MouseLeftButtonUp">
 					<toolkit:ContextMenuService.ContextMenu>
 						<toolkit:ContextMenu>
 							<toolkit:MenuItem Header="Bearbeiten" Tag="edit" />
@@ -29,7 +31,7 @@
 			</controls:PivotItem>
 			<controls:PivotItem Header="Heute"> 
 				<!--Triple line list no text wrapping-->
-				<ListBox x:Name="TodayListBox" Margin="0,0,-12,0" ItemsSource="{Binding TasksForToday}" SelectedItem="{Binding SelectedTask, Mode=TwoWay}" MouseLeftButtonUp="TodayListBox_MouseLeftButtonUp">
+				<ListBox x:Name="TodayListBox" Margin="0,0,-12,0" ItemsSource="{Binding TasksForToday, Mode=TwoWay}" SelectedItem="{Binding SelectedTask, Mode=TwoWay}" MouseLeftButtonUp="TodayListBox_MouseLeftButtonUp">
 
 					<toolkit:ContextMenuService.ContextMenu>
 						<toolkit:ContextMenu>

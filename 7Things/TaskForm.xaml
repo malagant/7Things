@@ -22,7 +22,7 @@
 				<TextBlock Height="30" Name="textBlock2" Text="Beschreibung" />
 				<TextBox Name="txtDescription" Text="" Height="156" HorizontalContentAlignment="Stretch" DataContext="{Binding}" AcceptsReturn="True" TextWrapping="Wrap"/>
 				<TextBlock Height="30" Name="textBlock3" Text="Termin" />
-				<toolkit:DatePicker x:Name="dpDate" Value=""/>
+				<toolkit:DatePicker x:Name="dpDate" ValueChanged="dpDate_ValueChanged" />
       </StackPanel>
 			<StackPanel Height="100" HorizontalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal" Name="buttonPanel" VerticalAlignment="Bottom"></StackPanel>
 		</Grid>
