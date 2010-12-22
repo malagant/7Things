@@ -17,7 +17,7 @@
 		<Grid x:Name="ContentPanel" Grid.Row="1">
 			<StackPanel Height="Auto" Orientation="Vertical">
 				<TextBlock Height="30" HorizontalAlignment="Left" Name="textBlock1" Text="Titel" VerticalAlignment="Top" Width="450" />
-				<TextBox Height="72" HorizontalAlignment="Left" Name="txtTitle" Text="" VerticalAlignment="Top" Width="480" />
+				<TextBox Height="72" HorizontalAlignment="Left" Name="txtTitle" VerticalAlignment="Top" Width="480" />
 				<CheckBox Content="Erledigt" Name="chkIsDone" VerticalAlignment="Top" />
 				<TextBlock Height="30" Name="textBlock2" Text="Beschreibung" />
 				<TextBox Name="txtDescription" Text="" Height="156" HorizontalContentAlignment="Stretch" DataContext="{Binding}" AcceptsReturn="True" TextWrapping="Wrap"/>

@@ -30,7 +30,10 @@
 				</ListBox>
 			</controls:PivotItem>
 			<controls:PivotItem Header="Heute"> 
+<<<<<<< HEAD
 				<!--Triple line list no text wrapping-->
+=======
+>>>>>>> e3da5ae79d67f08283c688a31cd8cb3fe316b103
 				<ListBox x:Name="TodayListBox" Margin="0,0,-12,0" ItemsSource="{Binding TasksForToday, Mode=TwoWay}" SelectedItem="{Binding SelectedTask, Mode=TwoWay}" MouseLeftButtonUp="TodayListBox_MouseLeftButtonUp">
 
 					<toolkit:ContextMenuService.ContextMenu>
