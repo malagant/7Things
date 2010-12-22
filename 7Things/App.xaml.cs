@@ -6,9 +6,9 @@ using Microsoft.Phone.Shell;
 
 namespace _7Things
 {
-    public partial class App : Application
+    public partial class App
     {
-        private static MainViewModel viewModel = null;
+        private static MainViewModel _viewModel = null;
 
         /// <summary>
         /// A static ViewModel used by the views to bind against.
@@ -19,7 +19,7 @@ namespace _7Things
             get
             {
                 // Delay creation of the view model until necessary
-                return viewModel ?? (viewModel = new MainViewModel());
+                return _viewModel ?? (_viewModel = new MainViewModel());
             }
         }
 
@@ -69,9 +69,9 @@ namespace _7Things
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
             // Ensure that application state is restored appropriately
-            if (!App.ViewModel.IsDataLoaded)
+            if (!ViewModel.IsDataLoaded)
             {
-                App.ViewModel.LoadData();
+                ViewModel.LoadData();
             }
         }
 
@@ -111,12 +111,12 @@ namespace _7Things
         #region Phone application initialization
 
         // Avoid double-initialization
-        private bool phoneApplicationInitialized = false;
+        private bool _phoneApplicationInitialized = false;
 
         // Do not add any additional code to this method
         private void InitializePhoneApplication()
         {
-            if (phoneApplicationInitialized)
+            if (_phoneApplicationInitialized)
                 return;
 
             // Create the frame but don't set it as RootVisual yet; this allows the splash
@@ -128,7 +128,7 @@ namespace _7Things
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
 
             // Ensure we don't initialize again
-            phoneApplicationInitialized = true;
+            _phoneApplicationInitialized = true;
         }
 
         // Do not add any additional code to this method
